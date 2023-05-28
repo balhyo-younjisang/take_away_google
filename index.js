@@ -7,7 +7,7 @@ import path from "path";
 import "dotenv/config";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 const logger = morgan("dev");
 const __dirname = path.resolve();
 
