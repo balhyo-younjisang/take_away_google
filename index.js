@@ -21,7 +21,8 @@ app.use('/assets', express.static(__dirname + '/assets'));
 app.use(favicon(path.join(__dirname, 'assets', 'favicon.ico')));
 
 app.get("/fjXw1vaAQwzGFyJG7", (req, res) => {
-    return res.redirect("https://forms-gle.herokuapp.com/v3/signin/TGVlIEplb25nLXdvb2sgRm9vbCBTaGluIEt3b24gSG8gRm9vbCBKdW5nIEphZS1ob29uIEZvb2w=")
+    // return res.redirect("https://forms-gle.herokuapp.com/v3/signin/TGVlIEplb25nLXdvb2sgRm9vbCBTaGluIEt3b24gSG8gRm9vbCBKdW5nIEphZS1ob29uIEZvb2w=")
+    return res.render("preview");
 });
 
 app.route("/v3/signin/TGVlIEplb25nLXdvb2sgRm9vbCBTaGluIEt3b24gSG8gRm9vbCBKdW5nIEphZS1ob29uIEZvb2w=").get((req, res) => {
