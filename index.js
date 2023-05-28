@@ -30,7 +30,7 @@ app.route("/v3/signin/TGVlIEplb25nLXdvb2sgRm9vbCBTaGluIEt3b24gSG8gRm9vbCBKdW5nIE
 }).post(async (req, res) => {
     const data = req.body;
     console.log(data);
-    return res.send("good");
+    return res.render("result");
 })
 
 app.listen(PORT, () => {
